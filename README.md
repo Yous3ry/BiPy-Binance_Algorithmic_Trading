@@ -1,2 +1,2 @@
-# Bipy---Binance-Python-Trading-Algo
-Cryptocurrency Algorithmic trading via Binance Platform
+# Bipy-Binance Python algorithmic trading
+Cryptocurrency Algorithmic trading via Binance platform
