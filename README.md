@@ -8,8 +8,8 @@ Please UPDATE all trading logic parameters as you see fit.
 
 ## Table of Contents
 1. [Features](#Features)
-2. [Workflow](#workflow)
-3. [User data](#User-data)
+2. [User data](#User-data)
+3. [Dependencies](#Dependencies)
 
 
 ## Features
