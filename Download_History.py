@@ -117,7 +117,6 @@ for symbol_data in exchange_info["symbols"]:
                 if "UP" not in symbol_data["symbol"][:-4] and "DOWN" not in symbol_data["symbol"][:-4]:
                     list_all_coins.append(symbol_data["symbol"])
 print("There are", len(list_all_coins), "coins trading on Binance")
-
 # used to avoid some downloading issues
 list_all_coins.sort()
 

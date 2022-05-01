@@ -54,6 +54,7 @@ class Coin:
         self.volume = []
         self.current_price = 0.0
         self.buy_price = 0.0
+        self.sell_price = 0.0
         self.coin_in_balance = False
         self.coin_balance = 0.0
         self.USDT_Balance = 0.0
@@ -203,7 +204,7 @@ def initialization():
     # loops through all coins
     for capital_coin in gc.get_objects():  # used to determine the coin required for update
         if isinstance(capital_coin, Coin) and capital_coin.name in required_coins:
-            # ensures coin have been trading for at least 2 months
+            # ensures coin have been trading for at least 3 days
             if len(capital_coin.close[:-1]) > (2 * 24 * 3):
                 # calculates coin power
                 # this method use previous close * sum of volume last 24 hours

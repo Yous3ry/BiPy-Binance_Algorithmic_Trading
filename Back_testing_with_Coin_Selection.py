@@ -124,10 +124,10 @@ while current_date <= end_date:
                 coins_in_balance_list.append(update_coin.name)
             # assigns coin power
             try:
-                # ensures coin have been trading for at least 2 months
+                # ensures coin have been trading for at least 3 days
                 if len(update_coin.data["close"][:current_date]) > 2*24*30:
                     # calculates coin power
-                    # this method used previous close * sum of volume last 24 hours
+                    # this method use previous close * sum of volume last 24 hours
                     update_coin.power = update_coin.data.loc[:current_date, "close"].to_list()[-2] * \
                                         sum(update_coin.data.loc[:current_date, "volume"].to_list()[(-2 * 24) - 1:-2])
                     all_power.append(update_coin.power)
